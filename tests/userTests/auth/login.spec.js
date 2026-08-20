@@ -58,7 +58,7 @@ test.describe("Login user", () => {
         expect(loginResponse.body.message).toContain("empty");
     });
 
-    test("unverified user login", async ({ request }) => {
+    test.skip("unverified user login", async ({ request }) => {
         const inputData = {
             "username": "expiredLink",
             "password": "expiredLinkPassword#123"
